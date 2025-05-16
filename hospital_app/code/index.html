@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management - Departments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hospital Management System</h1>
+
+    <!-- Departments Section -->
+    <section id="departments-section">
+        <h2>Departments</h2>
+        <div class="controls">
+            <button onclick="loadDepartments()">Load Departments</button>
+        </div>
+        <form id="add-department-form">
+            <h3>Add New Department</h3>
+            <input type="text" id="dept-id" placeholder="Department ID (e.g., DEP006)" required>
+            <input type="text" id="dept-name" placeholder="Department Name" required>
+            <input type="text" id="dept-floor" placeholder="Floor">
+            <button type="submit">Add Department</button>
+        </form>
+        <div id="departments-list" class="data-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
